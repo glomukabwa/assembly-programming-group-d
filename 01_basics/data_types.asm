@@ -3,7 +3,6 @@
                     ;   nasm -f elf64 -o data_types.o data_types.asm 
 ; Link it:              ld data_types.o -o data_types
 ; Run the file          ./data_types
-
 section .data
     ; Basic integer types
     myByte   db  0x41            ; 1 byte
