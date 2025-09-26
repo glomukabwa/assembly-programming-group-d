@@ -8,11 +8,11 @@ section .text
 
 _start:
 
-    mov bx, array          
+    mov ebx, array          
 
-    mov dl, [bx]
+    mov dl, [ebx]
 
-    mov dh, [bx+1]
+    mov dh, [ebx+1]
 
     ; Exit program
     mov ax, 1

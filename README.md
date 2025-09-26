@@ -15,3 +15,21 @@ Assembly programming class repo.
 - build/ → Compiled executables
 - docs/ → Teaching notes/slides
 - scripts/ → Helper scripts
+
+
+
+| 64-bit   | 32-bit     | 16-bit     | 8-bit High | 8-bit Low  | Traditional Purpose |
+|----------|------------|------------|------------|------------|---------------------|
+| rax      | eax        | ax         | ah         | al         | Accumulator         |
+| rbx      | ebx        | bx         | bh         | bl         | Base                |
+| rcx      | ecx        | cx         | ch         | cl         | Counter             |
+| rdx      | edx        | dx         | dh         | dl         | Data                |
+| rsi      | esi        | si         | -          | sil        | Source Index        |
+| rdi      | edi        | di         | -          | dil        | Destination Index   |
+| rbp      | ebp        | bp         | -          | bpl        | Base Pointer        |
+| rsp      | esp        | sp         | -          | spl        | Stack Pointer       |
+| r8-r15   | r8d-r15d   | r8w-r15w   | -          | r8b-r15b   | Extended registers  |
+
+
+
+

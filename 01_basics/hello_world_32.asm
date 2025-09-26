@@ -6,7 +6,9 @@ section .data
     ; message with newline 0xA, this indicates where the string ends
     msg db "Hello, World!", 0xA
 
-    ; length of message
+
+
+    ;length of message
     ;Subtract the start address of msg from the current address.
     ;That gives you the number of bytes between the start of msg and “now.”
     ;Which is exactly the length of your string.
@@ -32,7 +34,6 @@ _start:
     mov ecx, msg      ; address of message
     mov edx, len      ; message length
     int 0x80          ; call kernel
-
 
     mov eax, 1        ; syscall number (sys_exit)
     xor ebx, ebx      ; status 0

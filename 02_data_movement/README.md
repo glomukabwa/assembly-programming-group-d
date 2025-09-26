@@ -1,5 +1,5 @@
 # 02_data_movement examples
-# Data Movement in x86-64 Assembly (NASM)
+# Data Movement in x86-64 Assembly
 
 This folder demonstrates different usages of the `MOV` instruction in 64-bit NASM.
 
@@ -42,3 +42,8 @@ ld file.o -o file
 nasm -f elf64 file.asm -o file.o
 ld -o file file.o
 ./file
+
+
+nasm -f elf32 hello_world_32.asm -o hello_world_32.o
+ld -m elf_i386 -o hello32 hello_world_32.o
+./hello32
