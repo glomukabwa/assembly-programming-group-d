@@ -6,8 +6,6 @@ section .data
     ; message with newline 0xA, this indicates where the string ends
     msg db "Hello, World!", 0xA
 
-
-
     ;length of message
     ;Subtract the start address of msg from the current address.
     ;That gives you the number of bytes between the start of msg and “now.”
