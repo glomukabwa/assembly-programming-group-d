@@ -1,3 +1,7 @@
+; Assemble the file   : nasm -f elf32 04.asm -o 04.o
+; Link:                 ld -m elf_i386 04.o -o 04 
+; Run/Execute:          ./04 
+
 section .data
 nl db 10
 
