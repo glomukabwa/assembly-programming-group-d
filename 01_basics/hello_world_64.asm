@@ -35,6 +35,8 @@ _start:
     mov rdx, len      ; length of message
     syscall           ; call kernel
 
+    
+
     ; exit
     mov rax, 60       ; syscall number (sys_exit)
     xor rdi, rdi      ; status 0
