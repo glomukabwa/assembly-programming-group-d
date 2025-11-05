@@ -8,7 +8,7 @@ section .data
     ; len_equal and msg_equal are just variable names that the programmer declares so its okay to give them diff. names
     ; $ is the location where $ is standing so we say it is the location of the current address
     ; msg_equal is the address of the variable msg_equal
-    ; you are subtrating the 2 addresses to get the length of the message then $equ which stands for equate 
+    ; you are subtrating the 2 addresses to get the length of the message then equ which stands for equate 
     ; assigns that constant number to len_equal
     msg_not_equal db "Gloria Mukabwa, Student No:167754",10,0
     len_not_equal equ $ - msg_not_equal
@@ -44,7 +44,7 @@ print:
     ; and store it in memory while write means the opposite
     ; ebx stores the description of the file:0 = standard input(keyboard most of the time), 
     ; 1 = standard output(terminal in this case) and 2 = standard error message(error messages). 
-    ; ecx stores the data to be displayed sp in this case, the message
+    ; ecx stores the data to be displayed which in this case is the message
     ; edx stores the length of the messages to be displayed
     ; Now together, you have all the instructions. Note that this only works with a 32-bit system call
     ; which is known as int 0x80 as you will see below
