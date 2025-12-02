@@ -50,7 +50,7 @@ _start:
     ; Read reason
     mov rax, 0 ; syscall read
     mov rdi, 0 ; std in
-    mov rsi, buffer ; Override the buffer with the reason
+    mov rsi, buffer ; Overwrite the buffer with the reason
     mov rdx, 50
     syscall
 

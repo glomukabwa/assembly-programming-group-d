@@ -48,7 +48,7 @@ _start:
     ; Get reply to follow up qn
     mov eax, 3 ; syscall read
     mov ebx, 0 ; stdin
-    mov ecx, buffer ; override the buffer
+    mov ecx, buffer ; overwrite the buffer
     mov edx, 50 ; same space allocated to buffer initially
     int 0x80
 

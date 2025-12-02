@@ -8,8 +8,8 @@ section .text
     global _start
 
 _start:
-    mov al, [value1] 
-    add al, [value2]  
+    mov al, [value1] ; will load 5 into al
+    add al, [value2]  ; will add 7 to 7 which is in al and the new value will be 12
 
     ; Exit program
     mov eax, 1
