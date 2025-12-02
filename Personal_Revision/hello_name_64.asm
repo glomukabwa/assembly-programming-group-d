@@ -68,3 +68,5 @@ _start:
     mov rax, 60
     xor rdi, rdi
     syscall
+
+    ; read read_text_64.asm next

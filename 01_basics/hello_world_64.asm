@@ -36,7 +36,7 @@ _start:
     ;How to display a message.
     ;Notice that this one is different from the 32-bit one when it comes to registers, the syscall for write and calling the kernel
     mov rax, 1        ; syscall number (sys_write) Notice that it is different from the one for 32-bit
-                      ; The syscall for write in 64-bit is 1 abd for read is 0
+                      ; The syscall for write in 64-bit is 1 and for read is 0
     mov rdi, 1        ; file descriptor (stdout)/display on the terminal
     mov rsi, msg      ; address of message
     mov rdx, len      ; length of message

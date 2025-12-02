@@ -1,13 +1,19 @@
 ; This is where revision begins
 
-section .text
+section .data
     msg db "What is your name?" , 10, 0
     len_msg equ $ - msg
 
 section .bss
     buffer resb 50 ;reserve 50 bytes for buffer
+                   ; A buffer is a block of memory used to store data temporarily
+                   ; If I wanted to store two replies that I would use in the future, I'd give do this:
+                   ; buffer1 resb 50
+                   ; buffer2 resb 50 
+                   ; However, if I don't need the first reply, I can just use the one buffer I have declared
+                   ; here. The new reply will override the old one
 
-section .data
+section .text
     global _start
 
 _start:
